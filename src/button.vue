@@ -1,6 +1,6 @@
 <template>
     <button class="g-button" :class="{[`icon-${iconPosition}`]: true}">
-        <g-icon v-if="icon" :name="icon"></g-icon>
+        <g-icon v-if="icon" :name="icon" class="icon"></g-icon>
         <div class="content">
             <slot></slot>
         </div>
@@ -30,10 +30,10 @@ export default {
         &:active { background-color: var(--button-active-bg); }
         &:focus { outline: none; }
         > .content { order: 2; }
-        > .iconpark-icon { order: 1; margin-right: .1em; }
+        > .icon { order: 1; margin-right: .1em; }
         &.icon-right {
             > .content { order: 1; }
-            > .iconpark-icon { order: 2; margin-right: 0; margin-left: .1em;}
+            > .icon { order: 2; margin-right: 0; margin-left: .1em;}
         }
     }
 </style>
