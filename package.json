@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/kangxiaoye/EZ-UI#readme",
   "dependencies": {
+    "svg-sprite-loader": "^6.0.9",
+    "svg-sprite-loader-mod": "^4.1.6-mod1",
+    "svgo-loader": "^2.2.1",
     "vue": "^2.7.7",
     "vue-hot-reload-api": "^2.3.4"
   },
@@ -30,6 +33,6 @@
     "vue-template-compiler": "^2.7.7"
   },
   "alias": {
-    "vue" : "./node_modules/vue/dist/vue.common.js"
+    "vue": "./node_modules/vue/dist/vue.common.js"
   }
 }
