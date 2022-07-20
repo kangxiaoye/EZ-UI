@@ -1,8 +1,8 @@
 {
-  "name": "ez-ui",
-  "version": "0.0.1",
+  "name": "ez-ui-1",
+  "version": "0.0.2",
   "description": "这是一个简单易用的的UI框架",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "dev-test": "parcel watch test/* --no-cache & karma start",
     "test": "parcel build test/* --no-minify && karma start --single-run"
