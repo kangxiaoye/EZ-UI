@@ -27,16 +27,131 @@
         .box{
             margin: 20px;
         }
+
     </style>
 
 </head>
 <body>
-<div id="app">
-    <div style="border: 1px solid black;">
+<style>
+    .demo {
+        border: 1px solid #666;
+        min-height: 100px;
+    }
+    .sider {
+        background: #333;
+        width: 150px;
+    }
+    .sider.slide-enter, .sider.slide-leave-to {
+        margin-left: -150px;
+    }
+    .header {
+        background: #999;
+        height: 100px;
+    }
+    .footer {
+        background: #ccc;
+        height: 50px;
+    }
+</style>
 
-        <g-row gutter="20">
-            <g-col span="12"></g-col>
-            <g-col span="12"></g-col>
+
+<div id="app">
+    <g-layout style="height: 100vh;">
+        <g-sider>sider</g-sider>
+        <g-layout>
+            <g-header>header</g-header>
+            <g-content>content</g-content>
+            <g-footer>footer</g-footer>
+        </g-layout>
+    </g-layout>
+
+
+    <div style="border: 1px solid black;">
+        <g-row class="demoRow">
+            <g-col span="8">
+                <div class="demoCol">8</div>
+            </g-col>
+            <g-col span="8">
+                <div class="demoCol">8</div>
+            </g-col>
+            <g-col span="8">
+                <div class="demoCol">8</div>
+            </g-col>
+        </g-row>
+
+        <g-row class="demoRow">
+            <g-col span="6">
+                <div class="demoCol">6</div>
+            </g-col>
+            <g-col span="6">
+                <div class="demoCol">6</div>
+            </g-col>
+            <g-col span="6">
+                <div class="demoCol">6</div>
+            </g-col>
+            <g-col span="6">
+                <div class="demoCol">6</div>
+            </g-col>
+        </g-row>
+
+        <g-row class="demoRow">
+            <g-col span="4">
+                <div class="demoCol">4</div>
+            </g-col>
+            <g-col span="4">
+                <div class="demoCol">4</div>
+            </g-col>
+            <g-col span="4">
+                <div class="demoCol">4</div>
+            </g-col>
+            <g-col span="4">
+                <div class="demoCol">4</div>
+            </g-col>
+            <g-col span="4">
+                <div class="demoCol">4</div>
+            </g-col>
+            <g-col span="4">
+                <div class="demoCol">4</div>
+            </g-col>
+        </g-row>
+
+        <g-row class="demoRow">
+            <g-col span="2">
+                <div class="demoCol">2</div>
+            </g-col>
+            <g-col span="2">
+                <div class="demoCol">2</div>
+            </g-col>
+            <g-col span="2">
+                <div class="demoCol">2</div>
+            </g-col>
+            <g-col span="2">
+                <div class="demoCol">2</div>
+            </g-col>
+            <g-col span="2">
+                <div class="demoCol">2</div>
+            </g-col>
+            <g-col span="2">
+                <div class="demoCol">2</div>
+            </g-col>
+            <g-col span="2">
+                <div class="demoCol">2</div>
+            </g-col>
+            <g-col span="2">
+                <div class="demoCol">2</div>
+            </g-col>
+            <g-col span="2">
+                <div class="demoCol">2</div>
+            </g-col>
+            <g-col span="2">
+                <div class="demoCol">2</div>
+            </g-col>
+            <g-col span="2">
+                <div class="demoCol">2</div>
+            </g-col>
+            <g-col span="2">
+                <div class="demoCol">2</div>
+            </g-col>
         </g-row>
     </div>
     <hr>
