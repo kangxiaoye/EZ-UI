@@ -10,6 +10,9 @@ import Header from './header'
 import Sider from './sider'
 import Content from './content'
 import Footer from './footer'
+import Toast from './toast'
+import plugin from './plugin'
+
 
 
 Vue.component('g-button', Button)
@@ -23,6 +26,12 @@ Vue.component('g-header', Header)
 Vue.component('g-content', Content)
 Vue.component('g-footer', Footer)
 Vue.component('g-sider', Sider)
+Vue.component('g-toast', Toast)
+Vue.use(plugin)
+
+import createElement from 'vue'
+
+const h = createElement
 
 
 new Vue({
@@ -34,16 +43,16 @@ new Vue({
         message: 'value:双向绑定'
     },
     created(){
-        setTimeout(()=>{
-            let event = new Event('change');
-            let inputElement = this.$el.querySelector('input')
-            inputElement.dispatchEvent(event)
-
-        },3000)
+        this.$toast('文字', {
+            enableHtml: false
+        })
     },
     methods: {
         inputChange (e) {
             console.log(e)
+        },
+        showToast(){
+
         }
     }
 })
