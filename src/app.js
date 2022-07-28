@@ -57,7 +57,8 @@ new Vue({
         loading2: true,
         loading3: false,
         message: 'value:双向绑定',
-        selectedTab: '2'
+        selectedTab: 'sports',
+        selected:['1','2']
     },
     created(){
 
