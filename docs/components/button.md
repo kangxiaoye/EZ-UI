@@ -1,8 +1,12 @@
 ---
-title:Button
+title: Button - 按钮
 ---
 # 按钮
+<ClientOnly>
+  <button-demos></button-demos>
+</ClientOnly>
 
-使用方法
-<button-demos></button-demos>
+# 选项
+
+<font color="#3eaf7c">文字颜色预览</font>
 
