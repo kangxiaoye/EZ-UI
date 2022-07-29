@@ -1,0 +1,76 @@
+Arguments: 
+  D:\Software\nodejs\node.exe C:\Users\hasee\.node\corepack\yarn\1.22.15\bin\yarn.js add vue2@1.0.0
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\hasee\bin;F:\EZ UI\node_modules\.bin;D:\python3.8.6\Scripts;D:\python3.8.6;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;G:\javajdk\bin;G:\javajdk\jre\bin;D:\Software\nodejs;G:\anaconda;G:\anaconda\Library\mingw-w64\bin;G:\anaconda\Library\usr\bin;G:\anaconda\Library\bin;G:\anaconda\Scripts;C:\Users\hasee\AppData\Local\Microsoft\WindowsApps;G:\软件\vscode\Microsoft VS Code\bin;G:\javajdk\bin;G:\pycharm\PyCharm Community Edition 2021.1.1\bin;C:\Users\hasee\AppData\Roaming\npm;C:\Users\hasee\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  16.15.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'F:\EZ UI\node_modules\deasync\bin\win32-x64-node-16\deasync.node'
+
+npm manifest: 
+  {
+    "name": "ez-ui-1",
+    "version": "0.0.2",
+    "description": "这是一个简单易用的的UI框架",
+    "main": "dist/index.js",
+    "scripts": {
+      "start": "parcel index.html --no-cache",
+      "dev-test": "parcel watch test/* --no-cache & karma start",
+      "test": "parcel build test/* --no-minify && karma start --single-run"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/kangxiaoye/EZ-UI.git"
+    },
+    "keywords": [
+      "Vue，ui"
+    ],
+    "author": "kangxiaoye",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/kangxiaoye/EZ-UI/issues"
+    },
+    "homepage": "https://github.com/kangxiaoye/EZ-UI#readme",
+    "dependencies": {
+      "svg-sprite-loader": "^6.0.9",
+      "svg-sprite-loader-mod": "^4.1.6-mod1",
+      "svgo-loader": "^2.2.1",
+      "vue": "^2.7.7",
+      "vue-hot-reload-api": "^2.3.4"
+    },
+    "devDependencies": {
+      "@vue/component-compiler-utils": "^3.3.0",
+      "chai": "^4.3.6",
+      "chai-spies": "^1.0.0",
+      "karma": "^6.4.0",
+      "karma-chai": "^0.1.0",
+      "karma-chai-spies": "^0.1.4",
+      "karma-chrome-launcher": "^3.1.1",
+      "karma-mocha": "^2.0.1",
+      "karma-sinon-chai": "^2.0.2",
+      "mocha": "^10.0.0",
+      "parcel-bundler": "^1.12.5",
+      "sass": "^1.53.0",
+      "sinon": "^14.0.0",
+      "sinon-chai": "^3.7.0",
+      "vue-template-compiler": "^2.7.7"
+    },
+    "alias": {
+      "vue": "./node_modules/vue/dist/vue.common.js"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
