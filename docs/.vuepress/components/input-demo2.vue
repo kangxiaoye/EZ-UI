@@ -27,7 +27,7 @@
                 content: `
 
     <ez-input v-model="xxx"></ez-input>
-    <span>value:&nbsp;{{xxx}}</span>
+    <span>value:{{xxx}}</span>
       `.replace(/^ {8}/gm, '').trim()
             }
         }

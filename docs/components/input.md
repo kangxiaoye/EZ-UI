@@ -9,8 +9,6 @@ title: Input - 输入框
 
 # 选项
 
-### <font color="gray">Input 组件的选项有： disabled, readonly, error。 并且支持数据的双向绑定。</font>
-
 #### 1. disabled
 表示是否禁用状态，默认为 false，禁用。
 #### 2. readonly

@@ -13,7 +13,7 @@ title: Toast - 弹出提示框
 此选项用于设定 Toast 组件在当前堆叠上下文中的堆叠层级。默认为20。
 若你的项目不可见 Toast 组件，尝试传入一个 <font color="#3eaf7c">zIndex</font> 试试。
 
-#### 2.autoClose 
+#### 2. autoClose 
 此选项可以设定 Toast 自动关闭的延时。单位为“ 秒 ”，默认延时 5 秒后自动关闭。
 
 若传值<font color="#3eaf7c">autoClose: false</font>  则取消该功能
