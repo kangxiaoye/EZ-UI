@@ -7,7 +7,7 @@
         <ez-button :loading="loading1" @click="loading1 = !loading1">loading切换</ez-button>
         <ez-button icon="settings" :loading="loading2" @click="loading2 = !loading2">图标切换</ez-button>
         <ez-button disabled>禁用</ez-button>
-        <h2>使用方法</h2>
+        <h4>使用方法</h4>
         <pre><code>{{content}}</code></pre>
     </div>
 </template>
@@ -27,7 +27,7 @@
             <ez-button icon="settings" icon-position="right">图标靠右</ez-button>
             <ez-button :loading="loading1" @click="loading1 = !loading1">loading切换</ez-button>
             <ez-button icon="settings" :loading="loading2" @click="loading2 = !loading2">
-            图标切换
+                图标切换
             </ez-button>
             <ez-button disabled>禁用</ez-button>
               `.replace(/^ {8}/gm, '').trim()
@@ -37,6 +37,6 @@
 </script>
 <style>
     .button-demos {
-        margin-top: 16px;
+        margin-top: 40px;
     }
 </style>

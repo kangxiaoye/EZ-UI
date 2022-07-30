@@ -35,10 +35,6 @@ module.exports = {
                     '/components/collapse',
                 ]
             },
-            {
-                title: '作者：kangxiaoye',
-                collapsable: false
-            }
 
         ]
     }
