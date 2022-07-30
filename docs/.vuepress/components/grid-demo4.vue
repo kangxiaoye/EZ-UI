@@ -34,7 +34,7 @@
         </p>
         <p>
             <strong>选项：align</strong><br>
-            通过给 Row 设置 <sapn class="light">align</sapn> 属性, 可以定义其子组件在该节点里面的排版方式。
+            通过给 Row 设置 <span class="light">align</span> 属性, 可以定义其子组件在该节点里面的排版方式。
         </p>
         <pre><code>{{content}}</code></pre>
     </div>

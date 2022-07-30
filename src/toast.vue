@@ -1,19 +1,19 @@
 <template>
-    <div class="toast" ref="wrapper" :class="toastClasses">
-        <div class="wrapper" :class="toastClasses">
-            <div class="toast" ref="toast">
-                <div class="message">
-                    <slot v-if="!enableHtml"></slot>
-                    <div v-else v-html="$slots.default[0]"></div>
-                </div>
-                <div class="line" ref="line"></div>
-                <span class="close" v-if="closeButton" @click="onClickClose">
-                     {{closeButton.text}}</span>
+    <div class="gulu-toast" :class="toastClasses">
+        <div class="toast" ref="toast">
+            <div class="message">
+                <slot v-if="!enableHtml"></slot>
+                <div v-else v-html="$slots.default[0]"></div>
             </div>
-       </div>
+            <div class="line" ref="line"></div>
+            <span class="close" v-if="closeButton" @click="onClickClose">
+        {{closeButton.text}}
+      </span>
+        </div>
     </div>
 </template>
 <script>
+    //构造组件的选项
     export default {
         name: 'GuluToast',
         props: {
@@ -36,7 +36,6 @@
                 type: Boolean,
                 default: false
             },
-
             position: {
                 type: String,
                 default: 'top',
@@ -45,7 +44,9 @@
                 }
             }
         },
-        created () {
+        mounted () {
+            this.updateStyles()
+            this.execAutoClose()
         },
         computed: {
             toastClasses () {
@@ -53,10 +54,6 @@
                     [`position-${this.position}`]: true
                 }
             }
-        },
-        mounted () {
-            this.updateStyles()
-            this.execAutoClose()
         },
         methods: {
             updateStyles () {
@@ -77,7 +74,6 @@
                 this.$emit('close')
                 this.$destroy()
             },
-
             onClickClose () {
                 this.close()
                 if (this.closeButton && typeof this.closeButton.callback === 'function') {
@@ -103,7 +99,7 @@
         0% {opacity: 0; }
         100% {opacity: 1;}
     }
-    .wrapper {
+    .gulu-toast {
         position: fixed;
         left: 50%;
         transform: translateX(-50%);
@@ -133,8 +129,8 @@
         }
     }
     .toast {
-        display: flex;
         font-size: $font-size; min-height: $toast-min-height; line-height: 1.8;
+        display: flex;
         color: white; align-items: center; background: $toast-bg; border-radius: 4px;
         box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.50); padding: 0 16px;
         .message {
@@ -143,12 +139,12 @@
         .close {
             padding-left: 16px;
             flex-shrink: 0;
+            cursor: pointer;
         }
         .line {
             height: 100%;
             border-left: 1px solid #666;
             margin-left: 16px;
         }
-
     }
 </style>
